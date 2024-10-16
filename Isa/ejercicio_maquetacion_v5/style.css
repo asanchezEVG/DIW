@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estructura principal. Elementos del layout */
+
+body {
+    height: 500px;
+    width: 1260px;
+    background-color: rgb(227, 253, 253);
+    margin-top: 45px;
+}
+
+main {
+    background-color: rgb(203, 245, 221);
+    /* overflow: hidden; Esto hace que el main se visualice */
+    display: flow-root;
+}
+
+/* Estilos de la caja izquierda */
+
+#izquierda {
+    float: left;
+    width: 780px; /* (800px - 20px padding (10px + 10px) */
+    height: 1000px; /* (400px - 30px padding */
+    margin: 0 20px;
+    padding: 30px 10px 0 10px;
+    background-color: rgb(255, 148, 148);
+}
+
+/* Estilos de la caja derecha */
+
+#derecha {
+    float: left;
+    margin-right: 20px;
+    width: 370px; /* (400px - 30x padding */
+    height: 350px; /* (400px - 50px padding */
+    padding: 50px 0 0 30px;
+    background-color: rgb(255, 209, 209);
+    position: relative; /* Los elementos con posicionamiento absoluto se posicionan con respecto a este elemento en lugar del body, además ocupa espacio en el flujo. */
+}
+
+/* Elementos de la caja derecha */
+
+/* Estilo de la imagen */
+
+#derecha img {
+    width: 150px;
+    height: 255px;
+    border: 1px solid black;
+}
+
+/* Elementos de la caja izquierda */
+
+/* Elementos del formulario */
+
+form {
+    padding: 1em 0 1em 70px;
+    background-color: rgb(255, 245, 228);
+    margin-top: 4em;
+}
+
+form label, input {
+    display: block;
+}
+
+input[type="text"] {
+    width: 490px; /* (500px - 10x padding) */
+    padding-left: 10px;
+    height: 2em;
+    background-color: #D8D8D8;
+}
+
+#centrar {
+    padding-left: 185px;
+}
+
+#izquierda input[type="submit"] {
+    width: 150px; /* 146 px, 2px de borde por cada lado */
+    background-color: rgb(249, 207, 133);
+}
+
+/* Estilo del footer */
+
+footer {
+    height: 100px;
+    width: 1260px;
+    background-color: rgb(255, 227, 225);
+    clear: both;
+}
+
+/* Estilo para las cajas de la versión Absolute y Fixed */
+
+.absolute {
+    background-color: rgb(202, 73, 238);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fixed {
+    background-color: rgb(241, 138, 54);
+    position: fixed; /* No ocupa espacio en el flujo */
+    top: 0;
+    left: 0;
+}
+
+.sticky {
+    background-color: rgb(241, 54, 213);
+    position: sticky; /* Si ocupa espacio en el flujo. */
+    top: 0;
+    left: 0;
+}

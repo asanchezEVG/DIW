@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 500px;
+    width: 1260px;
+    background-color: rgb(227, 253, 253);
+    margin-top: 45px;
+}
+
+main {
+    float: left;
+    width: 780px; /* (800px - 20px padding (10px + 10px) */
+    height: 370px; /* (400px - 30px padding */
+    margin: 0 20px;
+    padding: 30px 10px 0 10px;
+    background-color: rgb(203, 241, 245);
+}
+
+aside {
+    float: left;
+    margin-right: 20px;
+    width: 370px; /* (400px - 30x padding */
+    height: 350px; /* (400px - 50px padding */
+    padding: 50px 0 0 30px;
+    background-color: rgb(166, 227, 233);
+}
+
+footer {
+    height: 100px;
+    width: 1260px;
+    background-color: rgb(113, 201, 206);
+    clear: both;
+}
