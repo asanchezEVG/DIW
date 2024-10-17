@@ -94,6 +94,8 @@ footer {
 .absolute {
     background-color: rgb(202, 73, 238);
     position: absolute;
+    width: 550px;
+    height: 75px;
     top: 0;
     left: 0;
 }
@@ -101,6 +103,8 @@ footer {
 .fixed {
     background-color: rgb(241, 138, 54);
     position: fixed;
+    width: 350px;
+    height: 75px;
     top: 0;
     left: 0;
 }
