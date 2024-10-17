@@ -95,15 +95,28 @@ footer {
 .absolute {
     background-color: rgb(202, 73, 238);
     position: absolute;
+    width: 70%;
+    height: 25%;
     top: 0;
     left: 0;
 }
 
 .fixed {
     background-color: rgb(241, 138, 54);
-    position: fixed; /* No ocupa espacio en el flujo */
-    top: 0;
-    left: 0;
+    position: fixed;
+    width: 20%;
+    height: 15%;
+    top: 75px; /* Se desplaza con respecto al margen superior del body */
+    left: 5px; /* Se desplaza con respecto al margen izquierdo del body */
+}
+
+.relative { /* Ocupa espacio en el flujo pero está desplazada dentro de su caja contenedora */
+    background-color: rgb(98, 73, 238);
+    width: 50%;
+    height: 20%;
+    position: relative;
+    top: 255px; /* Se desplaza con respecto al margen superior de su contenedor */
+    left: 150px; /* Se desplaza con respecto al margen izquierdo de su contenedor */
 }
 
 .sticky {
@@ -112,4 +125,5 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
+    height: 25%;
 }
