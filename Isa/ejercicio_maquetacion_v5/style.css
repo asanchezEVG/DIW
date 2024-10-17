@@ -111,4 +111,5 @@ footer {
     position: sticky; /* Si ocupa espacio en el flujo. */
     top: 0;
     left: 0;
+    width: 100%;
 }
