@@ -6,7 +6,7 @@
 /* Estructura principal. Elementos del layout */
 
 body {
-    height: 500px;
+    height: 50%;
     width: 1260px;
     background-color: rgb(227, 253, 253);
     margin-top: 45px;
@@ -22,10 +22,10 @@ main {
 
 #izquierda {
     float: left;
-    width: 780px; /* (800px - 20px padding (10px + 10px) */
-    height: 1000px; /* (400px - 30px padding */
-    margin: 0 20px;
-    padding: 30px 10px 0 10px;
+    width: 61.9%; /* (780px * 100 / 1260px) */
+    height: 1000px; /* (780px * 100 / 1260px) */
+    margin: 0 1.587%; /* (20px * 100 / 1260px) */
+    padding: 30px 0.794%; /* (10px * 100 / 1260px) */
     background-color: rgb(255, 148, 148);
 }
 
@@ -33,10 +33,10 @@ main {
 
 #derecha {
     float: left;
-    margin-right: 20px;
-    width: 370px; /* (400px - 30x padding */
+    margin-right: 1.59%; /* (20px * 100 / 1260px) */
+    width: 29.37%; /* (370px * 100 / 1260px) */
     height: 350px; /* (400px - 50px padding */
-    padding: 50px 0 0 30px;
+    padding: 50px 0 0 2.38%; /* (30px * 100 / 1260px) */
     background-color: rgb(255, 209, 209);
     position: relative; /* Los elementos con posicionamiento absoluto se posicionan con respecto a este elemento en lugar del body, además ocupa espacio en el flujo. */
 }
@@ -46,7 +46,7 @@ main {
 /* Estilo de la imagen */
 
 #derecha img {
-    width: 150px;
+    width: 40.54%; /* (150px * 100 / 370px) */
     height: 255px;
 }
 
@@ -55,7 +55,7 @@ main {
 /* Elementos del formulario */
 
 form {
-    padding: 1em 0 1em 70px;
+    padding: 1em 0 1em 8.974%; /* (70px * 100 / 780px) */
     background-color: rgb(255, 245, 228);
     margin-top: 4em;
 }
@@ -65,18 +65,18 @@ form label, input {
 }
 
 input[type="text"] {
-    width: 490px; /* (500px - 10x padding) */
-    padding-left: 10px;
+    width: 69.02%; /* (500px * 100 / 780px) */
+    padding-left: 1.48%; /* (10px * 100 / 680px) */
     height: 2em;
     background-color: #D8D8D8;
 }
 
 #centrar {
-    padding-left: 185px;
+    padding-left: 26%;
 }
 
 #izquierda input[type="submit"] {
-    width: 150px; /* 146 px, 2px de borde por cada lado */
+    width: 28.63%; /* (150px * 100 / 780px) */
     background-color: rgb(249, 207, 133);
 }
 
@@ -94,7 +94,7 @@ footer {
 .absolute {
     background-color: rgb(202, 73, 238);
     position: absolute;
-    width: 350px;
+    width: 87.5%; /* (350px * 100 / 400px) */
     height: 75px;
     top: 0;
     left: 0;
@@ -103,24 +103,24 @@ footer {
 .fixed {
     background-color: rgb(241, 138, 54);
     position: fixed;
-    width: 350px;
+    width: 18.4%; /* (350px * 100 / 1902px) */
     height: 75px;
     top: 75px; /* Se desplaza con respecto al margen superior del body */
-    left: 5px; /* Se desplaza con respecto al margen izquierdo del body */
+    left: 0.25%; /* (5px * 100 / 1260px) Se desplaza con respecto al margen izquierdo del body */
 }
 
 .relative { /* Ocupa espacio en el flujo pero está desplazada dentro de su caja contenedora */
     background-color: rgb(98, 73, 238);
-    width: 350px;
+    width: 94.59%; /* (350px * 100 / 370px) */
     height: 75px;
     position: relative;
     top: 255px; /* Se desplaza con respecto al margen superior de su contenedor */
-    left: 150px; /* Se desplaza con respecto al margen izquierdo de su contenedor */
+    left: 40.5%; /* (150px * 100 / 370px) Se desplaza con respecto al margen izquierdo de su contenedor */
 }
 
 .sticky {
     background-color: rgb(241, 54, 213);
-    position: sticky; /* Si ocupa espacio en el flujo. */
+    position: sticky; /* Si ocupa espacio en el flujo */
     top: 0;
     left: 0;
     width: 100%;
